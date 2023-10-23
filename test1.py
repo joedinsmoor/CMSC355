@@ -1,4 +1,9 @@
 import funcs
+import unittest
 
-def test1():
-    test1.assertEqual(funcs.joeaddition(1,2), 3)
+
+class test1(unittest.TestCase):
+    def test1(self):
+        self.assertEqual(funcs.joeaddition(1,2), 3)
+if __name__ == 'main':
+    unittest.main()
